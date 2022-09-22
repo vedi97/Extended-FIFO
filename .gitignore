@@ -1,5 +1,6 @@
 */*/*/bd/*/ip/*/*.vhd
 
+
 */*/bd/*/ip/*/*.xml
 */*/*/bd/*/ip/*/*.xml
 
@@ -18,6 +19,5 @@ ipshared
  *.vsix
 
  .Xil/*
- fifo_buffer/*
- fifo_buffer
-
+ ext_fifo/*
+ ext_fifo
