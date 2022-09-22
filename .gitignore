@@ -1,18 +1,23 @@
-# Build and Release Folders
-bin-debug/
-bin-release/
-[Oo]bj/
-[Bb]in/
+*/*/*/bd/*/ip/*/*.vhd
 
-# Other files and folders
-.settings/
+*/*/bd/*/ip/*/*.xml
+*/*/*/bd/*/ip/*/*.xml
 
-# Executables
-*.swf
-*.air
-*.ipa
-*.apk
+*.c
+*.h
+*.vho
+*.html
+*/*/bd/*/ip/*/*.tcl
+*/*/*/bd/*/ip/*/*.tcl
+hw_handoff
+ipshared
 
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
+ VSCODE
+ .vscode/*
+ .history/
+ *.vsix
+
+ .Xil/*
+ fifo_buffer/*
+ fifo_buffer
+
