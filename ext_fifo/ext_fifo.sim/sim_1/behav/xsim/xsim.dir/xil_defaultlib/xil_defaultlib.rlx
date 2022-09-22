@@ -1,0 +1,9 @@
+0.7
+2020.2
+Aug  5 2022
+22:59:05
+/home/Vedi/school/ECE 524L/Lab2/fa22-e524-lab2-vedi97/hardware/part5/ext_fifo/ext_fifo.sim/sim_1/behav/xsim/glbl.v,1649976174,verilog,,,,glbl,,uvm,,,,,,
+/home/Vedi/school/ECE 524L/Lab2/fa22-e524-lab2-vedi97/hardware/part5/sim/fifo_tb.vhd,1663812309,vhdl,,,,fifo_tb,,,,,,,,
+/home/Vedi/school/ECE 524L/Lab2/fa22-e524-lab2-vedi97/hardware/part5/src/fifo.vhd,1663811616,vhdl,,,,fifo,,,,,,,,
+/home/Vedi/school/ECE 524L/Lab2/fa22-e524-lab2-vedi97/hardware/part5/src/fifo_ctrl.vhd,1663811659,vhdl,/home/Vedi/school/ECE 524L/Lab2/fa22-e524-lab2-vedi97/hardware/part5/src/fifo.vhd,,,fifo_ctrl,,,,,,,,
+/home/Vedi/school/ECE 524L/Lab2/fa22-e524-lab2-vedi97/hardware/part5/src/reg_file.sv,1663811759,systemVerilog,/home/Vedi/school/ECE 524L/Lab2/fa22-e524-lab2-vedi97/hardware/part5/src/fifo.vhd,,,reg_file,,uvm,,,,,,

@@ -1,0 +1,239 @@
+#-----------------------------------------------------------
+# Vivado v2022.1.2 (64-bit)
+# SW Build 3605665 on Fri Aug  5 22:52:02 MDT 2022
+# IP Build 3603185 on Sat Aug  6 04:07:44 MDT 2022
+# Start of session at: Wed Sep 21 18:56:10 2022
+# Process ID: 2249
+# Current directory: /home/Vedi/school/ECE 524L/Lab2/fa22-e524-lab2-vedi97/hardware/part5/ext_fifo/ext_fifo.runs/synth_1
+# Command line: vivado -log fifo.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fifo.tcl
+# Log file: /home/Vedi/school/ECE 524L/Lab2/fa22-e524-lab2-vedi97/hardware/part5/ext_fifo/ext_fifo.runs/synth_1/fifo.vds
+# Journal file: /home/Vedi/school/ECE 524L/Lab2/fa22-e524-lab2-vedi97/hardware/part5/ext_fifo/ext_fifo.runs/synth_1/vivado.jou
+# Running On: localhost.localdomain, OS: Linux, CPU Frequency: 2999.829 MHz, CPU Physical cores: 2, Host memory: 16529 MB
+#-----------------------------------------------------------
+source fifo.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3014.211 ; gain = 2.020 ; free physical = 5615 ; free virtual = 10916
+Command: synth_design -top fifo -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 2290
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 3014.211 ; gain = 0.000 ; free physical = 5114 ; free virtual = 10415
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'fifo' [/home/Vedi/school/ECE 524L/Lab2/fa22-e524-lab2-vedi97/hardware/part5/src/fifo.vhd:28]
+INFO: [Synth 8-638] synthesizing module 'fifo_ctrl' [/home/Vedi/school/ECE 524L/Lab2/fa22-e524-lab2-vedi97/hardware/part5/src/fifo_ctrl.vhd:27]
+	Parameter ADDR_WIDTH bound to: 4 - type: integer 
+WARNING: [Synth 8-614] signal 'almost_full_reg' is read in the process but is not in the sensitivity list [/home/Vedi/school/ECE 524L/Lab2/fa22-e524-lab2-vedi97/hardware/part5/src/fifo_ctrl.vhd:86]
+WARNING: [Synth 8-614] signal 'almost_empty_reg' is read in the process but is not in the sensitivity list [/home/Vedi/school/ECE 524L/Lab2/fa22-e524-lab2-vedi97/hardware/part5/src/fifo_ctrl.vhd:86]
+WARNING: [Synth 8-614] signal 'w_count_next' is read in the process but is not in the sensitivity list [/home/Vedi/school/ECE 524L/Lab2/fa22-e524-lab2-vedi97/hardware/part5/src/fifo_ctrl.vhd:86]
+INFO: [Synth 8-256] done synthesizing module 'fifo_ctrl' (0#1) [/home/Vedi/school/ECE 524L/Lab2/fa22-e524-lab2-vedi97/hardware/part5/src/fifo_ctrl.vhd:27]
+INFO: [Synth 8-6157] synthesizing module 'reg_file' [/home/Vedi/school/ECE 524L/Lab2/fa22-e524-lab2-vedi97/hardware/part5/src/reg_file.sv:1]
+	Parameter DATA_WIDTH bound to: 4 - type: integer 
+	Parameter ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'reg_file' (0#1) [/home/Vedi/school/ECE 524L/Lab2/fa22-e524-lab2-vedi97/hardware/part5/src/reg_file.sv:1]
+INFO: [Synth 8-256] done synthesizing module 'fifo' (0#1) [/home/Vedi/school/ECE 524L/Lab2/fa22-e524-lab2-vedi97/hardware/part5/src/fifo.vhd:28]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 3014.215 ; gain = 0.004 ; free physical = 5224 ; free virtual = 10525
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 3014.215 ; gain = 0.004 ; free physical = 5219 ; free virtual = 10521
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 3022.215 ; gain = 8.004 ; free physical = 5217 ; free virtual = 10518
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 3022.223 ; gain = 8.012 ; free physical = 5188 ; free virtual = 10490
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    4 Bit       Adders := 6     
++---Registers : 
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input    4 Bit        Muxes := 8     
+	   4 Input    4 Bit        Muxes := 3     
+	   4 Input    1 Bit        Muxes := 8     
+	   2 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 3022.223 ; gain = 8.012 ; free physical = 4888 ; free virtual = 10193
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+-----------------------------+-----------+----------------------+-------------+
+|Module Name | RTL Object                  | Inference | Size (Depth x Width) | Primitives  | 
++------------+-----------------------------+-----------+----------------------+-------------+
+|fifo        | reg_file_unit/array_reg_reg | Implied   | 16 x 4               | RAM32M x 1  | 
++------------+-----------------------------+-----------+----------------------+-------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 3022.223 ; gain = 8.012 ; free physical = 4884 ; free virtual = 10189
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++------------+-----------------------------+-----------+----------------------+-------------+
+|Module Name | RTL Object                  | Inference | Size (Depth x Width) | Primitives  | 
++------------+-----------------------------+-----------+----------------------+-------------+
+|fifo        | reg_file_unit/array_reg_reg | Implied   | 16 x 4               | RAM32M x 1  | 
++------------+-----------------------------+-----------+----------------------+-------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 3022.223 ; gain = 8.012 ; free physical = 4905 ; free virtual = 10210
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 3022.223 ; gain = 8.012 ; free physical = 4921 ; free virtual = 10227
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 3022.223 ; gain = 8.012 ; free physical = 4936 ; free virtual = 10242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 3022.223 ; gain = 8.012 ; free physical = 4940 ; free virtual = 10246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 3022.223 ; gain = 8.012 ; free physical = 4940 ; free virtual = 10246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 3022.223 ; gain = 8.012 ; free physical = 4940 ; free virtual = 10246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 3022.223 ; gain = 8.012 ; free physical = 4939 ; free virtual = 10245
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |LUT1   |     2|
+|3     |LUT2   |     5|
+|4     |LUT3   |     5|
+|5     |LUT4   |     7|
+|6     |LUT5   |     6|
+|7     |LUT6   |    12|
+|8     |RAM32M |     1|
+|9     |FDCE   |    15|
+|10    |FDPE   |     1|
+|11    |IBUF   |     8|
+|12    |OBUF   |    12|
++------+-------+------+
+
+Report Instance Areas: 
++------+----------------+----------+------+
+|      |Instance        |Module    |Cells |
++------+----------------+----------+------+
+|1     |top             |          |    75|
+|2     |  ctrl_unit     |fifo_ctrl |    53|
+|3     |  reg_file_unit |reg_file  |     1|
++------+----------------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 3022.223 ; gain = 8.012 ; free physical = 4937 ; free virtual = 10243
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 3022.223 ; gain = 8.012 ; free physical = 4931 ; free virtual = 10237
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 3022.223 ; gain = 8.012 ; free physical = 4927 ; free virtual = 10232
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3022.223 ; gain = 0.000 ; free physical = 4992 ; free virtual = 10298
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3046.227 ; gain = 0.000 ; free physical = 4936 ; free virtual = 10241
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 1 instance 
+
+Synth Design complete, checksum: 99a73b87
+INFO: [Common 17-83] Releasing license: Synthesis
+18 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:29 . Memory (MB): peak = 3046.227 ; gain = 32.016 ; free physical = 5134 ; free virtual = 10439
+INFO: [Common 17-1381] The checkpoint '/home/Vedi/school/ECE 524L/Lab2/fa22-e524-lab2-vedi97/hardware/part5/ext_fifo/ext_fifo.runs/synth_1/fifo.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file fifo_utilization_synth.rpt -pb fifo_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 21 18:56:55 2022...
